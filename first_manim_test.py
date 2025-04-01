@@ -57,3 +57,17 @@ class Updaters(Scene):
         self.play(num.animate.shift(RIGHT * 2), run_time=2)
         self.wait()
 
+
+# make a counter or number updater
+class ValueTrackers(Scene):
+    def construct(self):
+
+        k = ValueTracker(5)
+
+        num = always_redraw(lambda : DecimalNumber().set_value(k.get_value()))
+
+        self.play(FadeIn(num))
+        self.wait()
+        self.play(k.animate.set_value(0), run_time = 5, rate_func=smooth)
+
+

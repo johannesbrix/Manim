@@ -90,5 +90,52 @@ class Graphing(Scene):
         self.wait()
 
 
+class UpdaterGraphing(Scene):
+    def construct(self):
+        k = ValueTracker(-4)
+
+        ax = Axes(x_range=[-4, 4, 1], 
+                  y_range=[0, 16, 2], 
+                  x_length=10, 
+                  y_length=6
+        ).add_coordinates()
+
+        func = ax.plot(lambda x : x**2, x_range=[-4, 4], color=BLUE)
+
+        slope = always_redraw(
+            lambda : ax.get_secant_slope_group(
+                x=k.get_value(), 
+                graph=func, 
+                dx=0.01, 
+                secant_line_color=GREEN, 
+                secant_line_length=3
+            )
+        )
+
+        # c2p = coordinates to point
+        pt = always_redraw(
+            lambda : Dot().move_to(ax.c2p(k.get_value(), 
+                                          k.get_value()**2))
+        )   
+
+        self.add(ax, func, slope, pt)
+        self.wait()
+        self.play(k.animate.set_value(4), run_time=3)
+        self.wait()
+
+
+Home = "C:\Users\Johannes\OneDrive\Dokumente\Johannes Brix Youtube\Branding"
+
+class SVGs(Scene):
+    def construct(self):
+
+        image = SVGMobject(f"{Home}\Banner")
+
+        self.play(DrawBorderThenFill(image))
+        
+
+
+
+
 
 

@@ -124,14 +124,20 @@ class UpdaterGraphing(Scene):
         self.wait()
 
 
-Home = "C:\Users\Johannes\OneDrive\Dokumente\Johannes Brix Youtube\Branding"
+Home = "Logo_vector_black_rectangle_without_bg.svg"
 
 class SVGs(Scene):
     def construct(self):
 
-        image = SVGMobject(f"{Home}\Banner")
+        # pic has to be in the same or a follow-up folder
+        icon = SVGMobject(file_name=f"{Home}").scale(0.5).to_edge(DR)
 
-        self.play(DrawBorderThenFill(image))
+        image = ImageMobject("sally").scale(0.5).to_edge(DL)
+
+        # only works with vectorized objects
+        self.play(DrawBorderThenFill(icon))
+        self.wait()
+        self.play(FadeIn(image))
         
 
 

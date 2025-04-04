@@ -59,9 +59,45 @@ class Scene3(Scene):
         self.play(Create(F_x))
         self.wait()
 
-        #dot1 = Dot(color=DARK_BROWN)
-        #dot2 = Dot(color=GREEN)
+        k = ValueTracker(-2)
 
+        pt1 = always_redraw(
+            lambda : Dot().move_to(area.c2p(k.get_value(), 
+                                          8*k.get_value()**3 + 3*k.get_value()))
+        ) 
 
+        pt2 = always_redraw(
+            lambda : Dot().move_to(area.c2p(k.get_value(), 
+                                          2*k.get_value()**4 + (3/2)*k.get_value()**2))
+        ) 
 
+        self.add(pt1, pt2)
+        self.wait()
 
+        h1_line = always_redraw(
+            lambda: Line(
+                start=area.c2p(area.x_range[0], 8*k.get_value()**3 + 3*k.get_value()),
+                end=pt1.get_center(),
+                color=YELLOW
+            )
+        )
+
+        h2_line = always_redraw(
+            lambda: Line(
+                start=area.c2p(area.x_range[0], 2*k.get_value()**4 + (3/2)*k.get_value()**2),
+                end=pt2.get_center(),
+                color=RED
+            )
+        )
+
+        self.play(
+            Create(h1_line),
+            Create(h2_line)
+        )
+
+        self.wait()
+
+        self.play(k.animate.set_value(2), run_time=3)
+        self.wait()
+
+        self.play(FadeOut(VGroup(area, pt1, pt2, h1_line, h2_line)))

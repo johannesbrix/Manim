@@ -124,7 +124,7 @@ class UpdaterGraphing(Scene):
         self.wait()
 
 
-Home = "Logo_vector_black_rectangle_without_bg.svg"
+Home = "media\images\Logo_vector_black_rectangle_without_bg.svg"
 
 class SVGs(Scene):
     def construct(self):
@@ -132,7 +132,7 @@ class SVGs(Scene):
         # pic has to be in the same or a follow-up folder
         icon = SVGMobject(file_name=f"{Home}").scale(0.5).to_edge(DR)
 
-        image = ImageMobject("sally").scale(0.5).to_edge(DL)
+        image = ImageMobject("media\images\sally").scale(0.5).to_edge(DL)
 
         # only works with vectorized objects
         self.play(DrawBorderThenFill(icon))

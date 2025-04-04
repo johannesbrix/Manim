@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/3977891868_2596240677_223132457.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_2834709167_4159992356.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_3362206101_1160504035.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_2834709167_395765912.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_2541025096_2924052023.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_2834709167_1437021728.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_788418263_1424562654.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/Scene2/2852726489_2834709167_1984875588.mp4'

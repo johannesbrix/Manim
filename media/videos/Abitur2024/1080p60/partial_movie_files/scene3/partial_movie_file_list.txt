@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/scene3/3977891868_2688965532_1927322818.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/scene3/2852726489_2659414741_2211098263.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/scene3/2852726489_2834709167_1831293023.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/scene3/2852726489_1712521505_1287480254.mp4'
+file 'file:C:/Users/Johannes/OneDrive/Dokumente/Learning/Web Dev/manim/media/videos/Abitur2024/1080p60/partial_movie_files/scene3/2852726489_2834709167_2491141435.mp4'
